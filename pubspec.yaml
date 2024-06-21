@@ -13,7 +13,7 @@ dependencies:
   device_info_plus: 9.1.2
   package_info_plus: 4.0.0
   crypto: 3.0.1
-  url_launcher: 6.0.18
+  url_launcher: 6.1.0
   permission_handler: 11.3.0
   flutter_secure_storage: 8.0.0
 
