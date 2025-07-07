@@ -75,7 +75,7 @@ class Auth {
       case AuthType.photos:
         if (Platform.isAndroid) {
           final androidInfo = await DeviceInfoPlugin().androidInfo;
-          if ((androidInfo.version.sdkInt ?? 0) <= 32) {
+          if ((androidInfo.version.sdkInt) <= 32) {
             status = await Permission.storage.request();
           }  else {
             status = await Permission.photos.request();

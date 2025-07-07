@@ -14,7 +14,7 @@ class NotificationManager {
   }
 
   /// 保存事件订阅者队列，key:事件名(id)，value: 对应事件的订阅者队列
-  final _notificationQueue = Map<dynamic, List<NotificationObject>>();
+  final _notificationQueue = <dynamic, List<NotificationObject>>{};
 
   /// 添加订阅者
   void add({Object? name, Object? bindObj, NotificationCallback? callback}) {
